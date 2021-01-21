@@ -1,0 +1,33 @@
+.app {
+    width: 1000px;
+    margin: auto;
+}
+.header {
+    font-size: 2rem;
+    color: red;
+    text-align: center;
+    padding: 10px;
+    border-bottom: solid 1px lightgray;
+}
+.todo {
+    font-size: 20px;
+    border-bottom: solid lightgray 1px;
+    margin: 15px;
+    color: darkslategrey;
+}
+.footer {
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    border-top: solid 1px lightgray;
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-style: italic;
+}

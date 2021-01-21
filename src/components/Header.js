@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Header (props) {
+function Header(props) {
   return (
-    <div>
-
+    <div className="header">
+      СПИСОК ДЕЛ:
     </div>
-  )
+  );
 }
 
 export default Header;
