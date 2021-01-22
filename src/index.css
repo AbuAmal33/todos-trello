@@ -1,29 +1,38 @@
 .app {
-    width: 1000px;
-    margin: auto;
+  width: 1000px;
+  margin: auto;
 }
 .header {
-    font-size: 2rem;
-    color: red;
-    text-align: center;
-    padding: 10px;
-    border-bottom: solid 1px lightgray;
+  font-size: 2rem;
+  color: red;
+  text-align: center;
+  padding: 10px;
+  border-bottom: solid 1px lavender;
 }
 .todo {
-    font-size: 20px;
-    border-bottom: solid lightgray 1px;
-    margin: 15px;
-    color: darkslategrey;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px whitesmoke;
+  align-items: center;
+  padding: 20px 10px;
+}
+.btn {
+  justify-content: end;
+}
+.title {
+  font-size: 20px;
+  color: darkslategrey;
+  flex: 1;
 }
 .footer {
-    width: 1000px;
-    margin: auto;
-    text-align: center;
-    font-size: 18px;
-    border-top: solid 1px lightgray;
-    display: flex;
-    justify-content: space-between;
-    color: grey;
-    padding: 10px;
-    font-style: italic;
+  width: 1000px;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  border-top: solid 1px lightgray;
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+  padding: 10px;
+  font-style: italic;
 }
