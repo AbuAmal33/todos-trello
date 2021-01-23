@@ -29,3 +29,26 @@ export const removeTodo = (id) => {
       });
   };
 };
+
+export const CheckTodo = (id, completed) => {
+  return (dispatch) => {
+    dispatch({
+      type: 'todos/check/start',
+      payload: id,
+    });
+    fetch(`https://jsonplaceholder.typicode.com/todos/${id}`, {
+      method: 'PATCH',
+      body: JSON.stringify({ completed: !completed }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    })
+      .then((response) => response.json())
+      .then(() => {
+        dispatch({
+          type: 'todos/check/success',
+          payload: id,
+        });
+      });
+  };
+};
