@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .app {
   width: 1000px;
   margin: auto;
@@ -23,6 +28,7 @@
   font-size: 20px;
   color: darkslategrey;
   flex: 1;
+  padding-left: 10px;
 }
 .footer {
   width: 1000px;
@@ -35,4 +41,8 @@
   color: grey;
   padding: 10px;
   font-style: italic;
+}
+.spin {
+  margin-bottom: 13px;
+  margin-right: -2px;
 }

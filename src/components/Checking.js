@@ -14,8 +14,8 @@ function Checking(props) {
     <ReactLoading
       color="blue"
       type="spin"
-      width={16}
-      height={16}
+      width={15}
+      height={15}
       className="spin"
     />
   ) : (
