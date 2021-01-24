@@ -18,14 +18,52 @@ const todosReducer = (state = initialState, action) => {
         loadingTodos: false,
       };
 
-    case 'delete':
+    case 'todos/remove/start':
       return {
         ...state,
-        todos: state.todos.filter((todo) => {
+        todos: state.todos.map((todo) => {
           if (todo.id === action.payload) {
-            return false;
+            return {
+              ...todo,
+              deleting: true,
+            };
           }
-          return true;
+          return todo;
+        }),
+      };
+
+    case 'todos/remove/success':
+      return {
+        ...state,
+        todos: state.todos.filter((todo) => todo.id !== action.payload),
+      };
+
+    case 'todos/check/start':
+      return {
+        ...state,
+        todos: state.todos.map((todo) => {
+          if (todo.id === action.payload) {
+            return {
+              ...todo,
+              checking: true,
+            };
+          }
+          return todo;
+        }),
+      };
+
+    case 'todos/check/success':
+      return {
+        ...state,
+        todos: state.todos.map((todo) => {
+          if (todo.id === action.payload) {
+            return {
+              ...todo,
+              completed: !todo.completed,
+              checking: false,
+            };
+          }
+          return todo;
         }),
       };
 

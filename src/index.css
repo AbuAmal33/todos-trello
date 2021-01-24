@@ -16,8 +16,8 @@
   align-items: center;
   padding: 20px 10px;
 }
-.btn {
-  justify-content: end;
+.input {
+  margin-right: 10px;
 }
 .title {
   font-size: 20px;
@@ -35,16 +35,4 @@
   color: grey;
   padding: 10px;
   font-style: italic;
-}
-button {
-  border-color: white;
-  background-color: darkred;
-  color: whitesmoke;
-  padding: 5px 10px;
-  transition: 0.3s;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-button:hover {
-  background-color: whitesmoke;
-  color: darkred;
 }
