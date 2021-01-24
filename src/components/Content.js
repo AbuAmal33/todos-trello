@@ -11,7 +11,7 @@ function Content(props) {
   };
 
   return (
-    <div>
+    <div className="container">
       {todos.map((todo) => {
         return (
           <div className="todo">
