@@ -16,13 +16,11 @@
   align-items: center;
   padding: 20px 10px;
 }
-.input {
-  margin-right: 10px;
-}
 .title {
   font-size: 20px;
   color: darkslategrey;
   flex: 1;
+  margin-left: 15px;
 }
 .footer {
   width: 1000px;
