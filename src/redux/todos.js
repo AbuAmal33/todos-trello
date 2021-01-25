@@ -1,6 +1,6 @@
 const initialState = {
   todos: [],
-  loadingTodos: false,
+  loading: false,
 };
 
 const todosReducer = (state = initialState, action) => {
@@ -8,14 +8,14 @@ const todosReducer = (state = initialState, action) => {
     case 'todos/load/start':
       return {
         ...state,
-        loadingTodos: true,
+        loading: true,
       };
 
     case 'todos/load/success':
       return {
         ...state,
         todos: action.payload,
-        loadingTodos: false,
+        loading: false,
       };
 
     case 'todos/remove/start':
