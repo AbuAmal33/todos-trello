@@ -5,6 +5,7 @@ import Checking from './Checking';
 import Button from './Button';
 import Todo from './Todo';
 import ReactLoading from 'react-loading';
+import Footer from './Footer';
 
 function Todos(props) {
   const todos = useSelector((state) => state.todos.todos);
@@ -22,7 +23,7 @@ function Todos(props) {
   return (
     <div>
       {loading ? (
-        <ReactLoading color="red" />
+        <ReactLoading color="red" width={50} className="red" />
       ) : (
         todos.map((todo, index) => {
           return (
