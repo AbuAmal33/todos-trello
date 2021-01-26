@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactLoading from 'react-loading';
-import { CheckTodo } from '../redux/actions';
+import { checkTodo } from '../redux/actions';
 import { useDispatch } from 'react-redux';
 
 function Checking(props) {
   const dispatch = useDispatch();
 
   const handleCheck = (id, completed) => {
-    dispatch(CheckTodo(id, completed));
+    dispatch(checkTodo(id, completed));
   };
 
   return props.todo.checking ? (

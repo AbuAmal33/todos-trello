@@ -35,7 +35,7 @@ export const removeTodo = (id) => {
   };
 };
 
-export const CheckTodo = (id, completed) => {
+export const checkTodo = (id, completed) => {
   return (dispatch) => {
     dispatch({
       type: 'todos/check/start',
