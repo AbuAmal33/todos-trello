@@ -33,7 +33,7 @@ function Todos(props) {
                 size="small"
                 radius={10}
                 onClick={() => handleDelete(todo.id)}
-                todo={todo}
+                todo={todo.deleting}
                 children="delete"
               />
             </div>
