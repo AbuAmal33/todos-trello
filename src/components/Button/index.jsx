@@ -8,7 +8,7 @@ function Button(props) {
       className={props.size}
       onClick={props.onClick}
       style={{ borderRadius: props.radius }}
-      disabled={props.todo.deleting}
+      disabled={props.todo}
     >
       {props.children}
     </button>
